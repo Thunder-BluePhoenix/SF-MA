@@ -1,0 +1,38 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-11-07 14:35:39.543073",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-11-07 14:36:41.924487",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Low Stock Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Tertiary Target",
+ "report_name": "Low Stock Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Area Sales Manager"
+  },
+  {
+   "role": "Supervisor"
+  },
+  {
+   "role": "Team Leader"
+  },
+  {
+   "role": "Promoter"
+  }
+ ]
+}

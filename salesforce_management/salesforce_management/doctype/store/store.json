@@ -1,0 +1,399 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "22000-.####",
+ "creation": "2023-06-24 16:16:46.824765",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "store_name",
+  "store_type",
+  "store_category",
+  "map_location",
+  "column_break_olpcn",
+  "start_time",
+  "end_time",
+  "section_break_jhex0",
+  "pan_no",
+  "gst_no",
+  "zone",
+  "state",
+  "column_break_xcwkd",
+  "city",
+  "pin_code",
+  "distributor",
+  "section_break_ruxpa",
+  "address",
+  "weekly_off",
+  "new_promoter_monthly_target_section",
+  "np_scheme_number",
+  "section_break_goosv",
+  "np_po_value_start",
+  "np_po_value_end",
+  "np_po_monthly_target",
+  "column_break_xptgu",
+  "np_units_start",
+  "np_units_end",
+  "np_units_monthly_target",
+  "old_promoter_monthly_target_section",
+  "op_scheme_number",
+  "section_break_vscqg",
+  "op_po_value_start",
+  "op_po_value_end",
+  "op_po_monthly_target",
+  "column_break_4p7ue",
+  "op_units_start",
+  "op_units_end",
+  "op_units_monthly_target",
+  "additional_incentive_tab",
+  "item_group",
+  "column_break_rnu46",
+  "payout",
+  "created_by_employee",
+  "created_by_employee_name",
+  "created_by_employee_designation",
+  "reports_to_name",
+  "reports_to_designation",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Store Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "store_type",
+   "fieldtype": "Link",
+   "label": "Store Type",
+   "options": "Store Type"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "store_category",
+   "fieldtype": "Link",
+   "label": "Store Category",
+   "options": "Store Category"
+  },
+  {
+   "fieldname": "map_location",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Map Location"
+  },
+  {
+   "fieldname": "column_break_olpcn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start TIme"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End TIme"
+  },
+  {
+   "fieldname": "section_break_jhex0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PAN No",
+   "unique": 1
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fetch_from": "zone.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "column_break_xcwkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "distributor",
+   "fieldtype": "Link",
+   "label": "Distributor",
+   "options": "Distributor"
+  },
+  {
+   "fieldname": "section_break_ruxpa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "weekly_off",
+   "fieldtype": "Select",
+   "label": "Weekly Off",
+   "options": "Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "new_promoter_monthly_target_section",
+   "fieldtype": "Tab Break",
+   "label": "New Promoter Monthly Target"
+  },
+  {
+   "fieldname": "np_po_value_start",
+   "fieldtype": "Int",
+   "label": "NP PO Value Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_po_value_end",
+   "fieldtype": "Int",
+   "label": "NP PO Value End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_po_monthly_target",
+   "fieldtype": "Int",
+   "label": "NP PO Monthly Target"
+  },
+  {
+   "fieldname": "column_break_xptgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "np_units_start",
+   "fieldtype": "Int",
+   "label": "NP Units Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_units_end",
+   "fieldtype": "Int",
+   "label": "NP Units End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_units_monthly_target",
+   "fieldtype": "Int",
+   "label": "NP Units Monthly Target"
+  },
+  {
+   "fieldname": "old_promoter_monthly_target_section",
+   "fieldtype": "Tab Break",
+   "label": "Old Promoter Monthly Target"
+  },
+  {
+   "fieldname": "op_po_value_start",
+   "fieldtype": "Int",
+   "label": "OP PO Value Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_po_value_end",
+   "fieldtype": "Int",
+   "label": "OP PO Value End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_po_monthly_target",
+   "fieldtype": "Int",
+   "label": "OP PO Monthly Target"
+  },
+  {
+   "fieldname": "column_break_4p7ue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "op_units_start",
+   "fieldtype": "Int",
+   "label": "OP Units Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_units_end",
+   "fieldtype": "Int",
+   "label": "OP Units End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_units_monthly_target",
+   "fieldtype": "Int",
+   "label": "OP Units Monthly Target"
+  },
+  {
+   "fieldname": "np_scheme_number",
+   "fieldtype": "Int",
+   "label": "NP Scheme Number"
+  },
+  {
+   "fieldname": "section_break_goosv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "op_scheme_number",
+   "fieldtype": "Int",
+   "label": "OP Scheme Number"
+  },
+  {
+   "fieldname": "section_break_vscqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_incentive_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Incentive"
+  },
+  {
+   "fieldname": "column_break_rnu46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Store",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_by_employee",
+   "fieldtype": "Link",
+   "label": "Created By Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "created_by_employee.employee_name",
+   "fieldname": "created_by_employee_name",
+   "fieldtype": "Data",
+   "label": "Created By Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reports_to.employee_name",
+   "fieldname": "reports_to_name",
+   "fieldtype": "Data",
+   "label": "Reports To Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "created_by_employee.designation",
+   "fieldname": "created_by_employee_designation",
+   "fieldtype": "Link",
+   "label": "Created By Employee Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "reports_to.designation",
+   "fieldname": "reports_to_designation",
+   "fieldtype": "Link",
+   "label": "Reports to Designation",
+   "options": "Designation",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-19 12:19:16.704122",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Store",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Promoter",
+   "share": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "store_name",
+ "track_changes": 1
+}

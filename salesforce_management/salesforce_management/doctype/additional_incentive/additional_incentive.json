@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 16:20:02.604449",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_range_bonus",
+  "focused_product_section",
+  "item",
+  "column_break_03pbp",
+  "payout",
+  "section_break_tp85i",
+  "additional_incentive_slab"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_range_bonus",
+   "fieldtype": "Table",
+   "label": "Product Range Bonus",
+   "options": "Product Range Bonus"
+  },
+  {
+   "fieldname": "focused_product_section",
+   "fieldtype": "Section Break",
+   "label": "Focused Product"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_03pbp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "section_break_tp85i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_incentive_slab",
+   "fieldtype": "Table",
+   "label": "Additional Incentive Slab",
+   "options": "Additional Incentive Slab"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-09-15 15:02:46.638954",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Additional Incentive",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

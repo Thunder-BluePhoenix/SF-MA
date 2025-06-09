@@ -1,0 +1,31 @@
+{
+ "content": null,
+ "creation": "2023-09-12 00:01:06.820012",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-09-12 00:01:06.820012",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "mark-market-visit",
+ "owner": "Administrator",
+ "page_name": "Mark Market Visit",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Supervisor"
+  },
+  {
+   "role": "Team Leader"
+  },
+  {
+   "role": "Area Sales Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

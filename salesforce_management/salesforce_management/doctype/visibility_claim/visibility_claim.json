@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-23 01:43:57.623857",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "date",
+  "store",
+  "section_break_cepuy",
+  "collection_amount",
+  "payment_type",
+  "column_break_swbc7",
+  "price_difference_amount",
+  "damage_claim"
+ ],
+ "fields": [
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Store"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "collection_amount",
+   "fieldtype": "Currency",
+   "label": "Collection Amount"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment type",
+   "options": "Cash\nBank\nUpi"
+  },
+  {
+   "fieldname": "price_difference_amount",
+   "fieldtype": "Currency",
+   "label": "Price Difference Amount"
+  },
+  {
+   "fieldname": "damage_claim",
+   "fieldtype": "Currency",
+   "label": "Damage Claim"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "section_break_cepuy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_swbc7",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-24 16:49:26.285180",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Visibility Claim",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

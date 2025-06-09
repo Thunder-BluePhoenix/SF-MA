@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-17 13:04:45.337734",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "primary_target",
+  "month",
+  "total_payout",
+  "primary_targets_section",
+  "primary_target_qty",
+  "primary_target_achievement_qty",
+  "primary_percentage",
+  "primary_ep",
+  "primary_wet_percent",
+  "primary_payout_amt",
+  "collection_targets_section",
+  "collection_target_qty",
+  "collection_target_achievement_qty",
+  "collection_percentage",
+  "collection_ep",
+  "collection_wet_percent",
+  "collection_payout_amt",
+  "liquid_targets_section",
+  "liquid_target_qty",
+  "liquid_target_achievement_qty",
+  "liquid_percentage",
+  "liquid_ep",
+  "liquid_wet_percent",
+  "liquid_payout_amt"
+ ],
+ "fields": [
+  {
+   "fieldname": "primary_target",
+   "fieldtype": "Link",
+   "label": "Primary Target",
+   "options": "Primary Target"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "primary_targets_section",
+   "fieldtype": "Tab Break",
+   "label": "Primary Targets"
+  },
+  {
+   "fetch_from": "primary_target.month_plan",
+   "fieldname": "primary_target_qty",
+   "fieldtype": "Int",
+   "label": "Primary Target Qty"
+  },
+  {
+   "fetch_from": "primary_target.monthly_target_achieved_qty",
+   "fieldname": "primary_target_achievement_qty",
+   "fieldtype": "Int",
+   "label": "Primary Target Achievement Qty"
+  },
+  {
+   "fetch_from": "primary_target.monthly_target_percentage",
+   "fieldname": "primary_percentage",
+   "fieldtype": "Percent",
+   "label": "Primary Percentage"
+  },
+  {
+   "fieldname": "primary_ep",
+   "fieldtype": "Currency",
+   "label": "Primary EP"
+  },
+  {
+   "fieldname": "primary_wet_percent",
+   "fieldtype": "Percent",
+   "label": "Primary Wet Percent"
+  },
+  {
+   "fieldname": "primary_payout_amt",
+   "fieldtype": "Data",
+   "label": "Primary Payout Amt"
+  },
+  {
+   "fieldname": "collection_targets_section",
+   "fieldtype": "Tab Break",
+   "label": "Collection Targets"
+  },
+  {
+   "fetch_from": "primary_target.collection_monthly_target",
+   "fieldname": "collection_target_qty",
+   "fieldtype": "Int",
+   "label": "Collection Target Qty"
+  },
+  {
+   "fetch_from": "primary_target.collection_monthly_achieved_qty",
+   "fieldname": "collection_target_achievement_qty",
+   "fieldtype": "Int",
+   "label": "Collection Target Achievement Qty"
+  },
+  {
+   "fetch_from": "primary_target.collection_monthly_achieved_percent",
+   "fieldname": "collection_percentage",
+   "fieldtype": "Percent",
+   "label": "Collection Percentage"
+  },
+  {
+   "fieldname": "collection_ep",
+   "fieldtype": "Currency",
+   "label": "Collection EP"
+  },
+  {
+   "fieldname": "collection_wet_percent",
+   "fieldtype": "Percent",
+   "label": "Collection Wet Percent"
+  },
+  {
+   "fieldname": "collection_payout_amt",
+   "fieldtype": "Data",
+   "label": "Collection Payout Amt"
+  },
+  {
+   "fieldname": "liquid_targets_section",
+   "fieldtype": "Tab Break",
+   "label": "Liquid Targets"
+  },
+  {
+   "fetch_from": "primary_target.liquid_monthly_target",
+   "fieldname": "liquid_target_qty",
+   "fieldtype": "Int",
+   "label": "Liquid Target Qty"
+  },
+  {
+   "fetch_from": "primary_target.liquid_monthly_achieved_qty",
+   "fieldname": "liquid_target_achievement_qty",
+   "fieldtype": "Int",
+   "label": "Liquid Target Achievement Qty"
+  },
+  {
+   "fetch_from": "primary_target.liquid_monthly_achieved_percent",
+   "fieldname": "liquid_percentage",
+   "fieldtype": "Percent",
+   "label": "Liquid Percentage"
+  },
+  {
+   "fieldname": "liquid_ep",
+   "fieldtype": "Currency",
+   "label": "Liquid EP"
+  },
+  {
+   "fieldname": "liquid_wet_percent",
+   "fieldtype": "Percent",
+   "label": "Liquid Wet Percent"
+  },
+  {
+   "fieldname": "liquid_payout_amt",
+   "fieldtype": "Data",
+   "label": "Liquid Payout Amt"
+  },
+  {
+   "fieldname": "total_payout",
+   "fieldtype": "Currency",
+   "label": "Total Payout"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-17 14:47:55.297358",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Primary Target Incentive",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

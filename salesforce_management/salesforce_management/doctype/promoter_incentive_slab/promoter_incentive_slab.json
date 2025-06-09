@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-03 23:43:30.514069",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incentive_slab"
+ ],
+ "fields": [
+  {
+   "fieldname": "incentive_slab",
+   "fieldtype": "Table",
+   "label": "Incentive Slab",
+   "options": "Incentive Slab Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-22 16:10:33.114671",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Promoter Incentive Slab",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

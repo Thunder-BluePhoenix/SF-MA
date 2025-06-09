@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-04 11:56:13.965792",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_type",
+  "store",
+  "store_name",
+  "activities_category",
+  "date_and_time",
+  "employee",
+  "column_break_7r2ns",
+  "employee_name",
+  "remark",
+  "images",
+  "image_timestamp",
+  "activity",
+  "payload"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Activity Type",
+   "options": "Own\nCompetitors"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "label": "Store",
+   "options": "Store"
+  },
+  {
+   "fetch_from": "store.store_name",
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Store Name"
+  },
+  {
+   "fieldname": "activities_category",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Activities Category",
+   "options": "Activities Category"
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Date and Time"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_7r2ns",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "image_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Image Timestamp"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Small Text",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Table",
+   "label": "Images",
+   "options": "Store Activities Images"
+  },
+  {
+   "fieldname": "payload",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Payload"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 15:02:45.968898",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Store Activities",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Promoter",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

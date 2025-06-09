@@ -1,0 +1,22 @@
+{
+ "content": null,
+ "creation": "2023-07-19 16:31:25.414587",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-07-19 16:33:54.302084",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "sales-registration",
+ "owner": "Administrator",
+ "page_name": "Sales Registration",
+ "roles": [
+  {
+   "role": "Promoter"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

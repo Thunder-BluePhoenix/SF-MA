@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:zone_name",
+ "creation": "2023-06-24 16:29:13.436193",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "zone_name",
+  "new_promoter_monthly_target_section",
+  "np_scheme_number",
+  "section_break_goosv",
+  "np_po_value_start",
+  "np_po_value_end",
+  "np_po_monthly_target",
+  "column_break_xptgu",
+  "np_units_start",
+  "np_units_end",
+  "np_units_monthly_target",
+  "old_promoter_monthly_target_section",
+  "op_scheme_number",
+  "section_break_vscqg",
+  "op_po_value_start",
+  "op_po_value_end",
+  "op_po_monthly_target",
+  "column_break_4p7ue",
+  "op_units_start",
+  "op_units_end",
+  "op_units_monthly_target",
+  "additional_incentive_tab",
+  "item_group",
+  "column_break_rnu46",
+  "payout"
+ ],
+ "fields": [
+  {
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "Zone Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "new_promoter_monthly_target_section",
+   "fieldtype": "Tab Break",
+   "label": "New Promoter Monthly Target"
+  },
+  {
+   "fieldname": "np_po_value_start",
+   "fieldtype": "Int",
+   "label": "NP PO Value Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_po_value_end",
+   "fieldtype": "Int",
+   "label": "NP PO Value End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_po_monthly_target",
+   "fieldtype": "Int",
+   "label": "NP PO Monthly Target"
+  },
+  {
+   "fieldname": "column_break_xptgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "np_units_start",
+   "fieldtype": "Int",
+   "label": "NP Units Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_units_end",
+   "fieldtype": "Int",
+   "label": "NP Units End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "np_units_monthly_target",
+   "fieldtype": "Int",
+   "label": "NP Units Monthly Target"
+  },
+  {
+   "fieldname": "old_promoter_monthly_target_section",
+   "fieldtype": "Tab Break",
+   "label": "Old Promoter Monthly Target"
+  },
+  {
+   "fieldname": "op_po_value_start",
+   "fieldtype": "Int",
+   "label": "OP PO Value Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_po_value_end",
+   "fieldtype": "Int",
+   "label": "OP PO Value End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_po_monthly_target",
+   "fieldtype": "Int",
+   "label": "OP PO Monthly Target"
+  },
+  {
+   "fieldname": "column_break_4p7ue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "op_units_start",
+   "fieldtype": "Int",
+   "label": "OP Units Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_units_end",
+   "fieldtype": "Int",
+   "label": "OP Units End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "op_units_monthly_target",
+   "fieldtype": "Int",
+   "label": "OP Units Monthly Target"
+  },
+  {
+   "fieldname": "np_scheme_number",
+   "fieldtype": "Int",
+   "label": "NP Scheme Number"
+  },
+  {
+   "fieldname": "section_break_goosv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "op_scheme_number",
+   "fieldtype": "Int",
+   "label": "OP Scheme Number"
+  },
+  {
+   "fieldname": "section_break_vscqg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "additional_incentive_tab",
+   "fieldtype": "Tab Break",
+   "label": "Additional Incentive"
+  },
+  {
+   "fieldname": "column_break_rnu46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "label": "Payout"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 15:02:45.573127",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Zone",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

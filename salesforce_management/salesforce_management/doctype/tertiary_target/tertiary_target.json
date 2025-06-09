@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-05 15:40:16.569992",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "store",
+  "zone",
+  "promoter_name",
+  "isr_name",
+  "total_target_quantity",
+  "quarterly_target_quantity",
+  "quarterly_target_achieved_qty",
+  "quarterly_target_amount",
+  "quarterly_target_achieved_amount",
+  "quarterly_target_percentage",
+  "column_break_tbwf",
+  "store_id",
+  "store_name",
+  "aon",
+  "city",
+  "reports_to",
+  "isr_code",
+  "month_plan",
+  "monthly_target_achieved_qty",
+  "monthly_target_achieved_amount",
+  "monthly_target_percentage",
+  "daily_target_quantity",
+  "daily_target_achieved_qty",
+  "daily_target_amount",
+  "daily_target_achieved_amount",
+  "daily_target_percentage",
+  "tab_2_tab",
+  "items",
+  "focused_products_tab",
+  "focused_products",
+  "monthly_target_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store",
+   "options": "Store",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "promoter_name",
+   "fieldtype": "Data",
+   "label": "Promoter Name ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "isr_name",
+   "fieldtype": "Data",
+   "label": "ISR Name "
+  },
+  {
+   "fieldname": "month_plan",
+   "fieldtype": "Data",
+   "label": "Month Plan"
+  },
+  {
+   "fieldname": "column_break_tbwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "store_id",
+   "fieldtype": "Data",
+   "label": "Store ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reports_to",
+   "fieldtype": "Data",
+   "label": "Reports to",
+   "read_only": 1
+  },
+  {
+   "fieldname": "isr_code",
+   "fieldtype": "Data",
+   "label": "ISR Code "
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Target Setting"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Tertiary Target Items"
+  },
+  {
+   "fieldname": "total_target_quantity",
+   "fieldtype": "Int",
+   "label": "Total Target Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quarterly_target_quantity",
+   "fieldtype": "Int",
+   "label": "Quarterly Target Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quarterly_target_amount",
+   "fieldtype": "Currency",
+   "label": "Quarterly Target Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_quantity",
+   "fieldtype": "Int",
+   "label": "Daily Target Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_amount",
+   "fieldtype": "Currency",
+   "label": "Daily Target Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "monthly_target_amount",
+   "fieldtype": "Currency",
+   "label": "Monthly Target Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "focused_products_tab",
+   "fieldtype": "Tab Break",
+   "label": "Focused Products"
+  },
+  {
+   "fieldname": "focused_products",
+   "fieldtype": "Table",
+   "label": "Focused Products",
+   "options": "Tertiary Target  Focused Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "daily_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Daily Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "daily_target_achieved_amount",
+   "fieldtype": "Currency",
+   "label": "Daily Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "quarterly_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Quarterly Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "quarterly_target_achieved_amount",
+   "fieldtype": "Currency",
+   "label": "Quarterly Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "monthly_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Monthly Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "monthly_target_achieved_amount",
+   "fieldtype": "Int",
+   "label": "Monthly Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quarterly_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Quarterly Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "monthly_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Monthly Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Daily Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "store.store_name",
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "label": "Store Name"
+  },
+  {
+   "fetch_from": "store.custom_aon",
+   "fieldname": "aon",
+   "fieldtype": "Int",
+   "label": "AON"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-29 16:36:23.109451",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Tertiary Target",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

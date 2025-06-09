@@ -1,0 +1,26 @@
+{
+ "content": null,
+ "creation": "2023-07-20 23:06:35.119385",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-07-20 23:06:35.119385",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "stock-taking",
+ "owner": "Administrator",
+ "page_name": "Stock Taking",
+ "roles": [
+  {
+   "role": "Promoter"
+  },
+  {
+   "role": "Team Leader"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Stock Taking"
+}

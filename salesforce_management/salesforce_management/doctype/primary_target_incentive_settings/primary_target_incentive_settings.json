@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-16 23:32:04.945142",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "incentive_structure_tab",
+  "monthly_base_incentive",
+  "incentive_slab_1_on_120_primary",
+  "incentive_slab_2_on_150_primary",
+  "incentive_slab_3_on_200_primary",
+  "maximum_earning_potential_in_a_month",
+  "kpis_and_weightage_tab",
+  "primary",
+  "collection_90_of_primary",
+  "focus_drive_liquid_30_of_primary",
+  "area_expansion_distribution"
+ ],
+ "fields": [
+  {
+   "fieldname": "incentive_structure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Incentive Structure"
+  },
+  {
+   "fieldname": "monthly_base_incentive",
+   "fieldtype": "Currency",
+   "label": "Monthly base Incentive"
+  },
+  {
+   "fieldname": "incentive_slab_1_on_120_primary",
+   "fieldtype": "Currency",
+   "label": "Incentive Slab 1 on 120% primary"
+  },
+  {
+   "fieldname": "incentive_slab_2_on_150_primary",
+   "fieldtype": "Currency",
+   "label": "Incentive Slab 2 on 150% Primary"
+  },
+  {
+   "fieldname": "incentive_slab_3_on_200_primary",
+   "fieldtype": "Currency",
+   "label": "Incentive Slab 3 on 200% Primary"
+  },
+  {
+   "fieldname": "maximum_earning_potential_in_a_month",
+   "fieldtype": "Currency",
+   "label": "Maximum Earning potential in a month"
+  },
+  {
+   "fieldname": "kpis_and_weightage_tab",
+   "fieldtype": "Tab Break",
+   "label": "KPIs and Weightage"
+  },
+  {
+   "fieldname": "primary",
+   "fieldtype": "Percent",
+   "label": "Primary"
+  },
+  {
+   "fieldname": "collection_90_of_primary",
+   "fieldtype": "Percent",
+   "label": "Collection 90% of Primary"
+  },
+  {
+   "fieldname": "focus_drive_liquid_30_of_primary",
+   "fieldtype": "Percent",
+   "label": "Focus Drive Liquid 30% of Primary"
+  },
+  {
+   "fieldname": "area_expansion_distribution",
+   "fieldtype": "Percent",
+   "label": "Area Expansion/ Distribution"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-02-16 23:35:26.745361",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Primary Target Incentive Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

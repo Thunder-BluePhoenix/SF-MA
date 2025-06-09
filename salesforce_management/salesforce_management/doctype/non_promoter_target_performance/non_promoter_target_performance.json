@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-08 22:36:07.030060",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "store",
+  "zone",
+  "employee",
+  "employee_name",
+  "isr_name",
+  "quarterly_target_quantity",
+  "quarterly_target_achieved_qty",
+  "quarterly_target_amount",
+  "quarterly_target_achieved_amount",
+  "quarterly_target_percentage",
+  "column_break_tbwf",
+  "store_name",
+  "aon",
+  "city",
+  "reports_to",
+  "isr_code",
+  "month_plan",
+  "monthly_target_achieved_qty",
+  "monthly_target_amount",
+  "monthly_target_achieved_amount",
+  "monthly_target_percentage",
+  "daily_target_quantity",
+  "daily_target_achieved_qty",
+  "daily_target_amount",
+  "daily_target_achieved_amount",
+  "daily_target_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store",
+   "options": "Store",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "isr_name",
+   "fieldtype": "Data",
+   "label": "ISR Name "
+  },
+  {
+   "fieldname": "quarterly_target_quantity",
+   "fieldtype": "Int",
+   "label": "Quarterly Target Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarterly_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Quarterly Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quarterly_target_amount",
+   "fieldtype": "Currency",
+   "label": "Quarterly Target Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "quarterly_target_achieved_amount",
+   "fieldtype": "Currency",
+   "label": "Quarterly Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quarterly_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Quarterly Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tbwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "store.store_name",
+   "fieldname": "store_name",
+   "fieldtype": "Data",
+   "label": "Store Name"
+  },
+  {
+   "fetch_from": "store.custom_aon",
+   "fieldname": "aon",
+   "fieldtype": "Int",
+   "label": "AON"
+  },
+  {
+   "fetch_from": "store.city",
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.reports_to",
+   "fieldname": "reports_to",
+   "fieldtype": "Data",
+   "label": "Reports to",
+   "read_only": 1
+  },
+  {
+   "fieldname": "isr_code",
+   "fieldtype": "Data",
+   "label": "ISR Code "
+  },
+  {
+   "default": "0",
+   "fieldname": "monthly_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Monthly Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "monthly_target_amount",
+   "fieldtype": "Int",
+   "label": "Monthly Target Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "monthly_target_achieved_amount",
+   "fieldtype": "Int",
+   "label": "Monthly Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "monthly_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Monthly Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_quantity",
+   "fieldtype": "Int",
+   "label": "Daily Target Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "daily_target_achieved_qty",
+   "fieldtype": "Int",
+   "label": "Daily Target Achieved Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_amount",
+   "fieldtype": "Currency",
+   "label": "Daily Target Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "daily_target_achieved_amount",
+   "fieldtype": "Currency",
+   "label": "Daily Target Achieved Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "daily_target_percentage",
+   "fieldtype": "Percent",
+   "label": "Daily Target Percentage",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month_plan",
+   "fieldtype": "Int",
+   "label": "Monthy Target Qty"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-09 11:56:18.835120",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Non Promoter Target Performance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Area Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Team Leader",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supervisor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

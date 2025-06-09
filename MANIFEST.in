@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include salesforce_management *.css
+recursive-include salesforce_management *.csv
+recursive-include salesforce_management *.html
+recursive-include salesforce_management *.ico
+recursive-include salesforce_management *.js
+recursive-include salesforce_management *.json
+recursive-include salesforce_management *.md
+recursive-include salesforce_management *.png
+recursive-include salesforce_management *.py
+recursive-include salesforce_management *.svg
+recursive-include salesforce_management *.txt
+recursive-exclude salesforce_management *.pyc

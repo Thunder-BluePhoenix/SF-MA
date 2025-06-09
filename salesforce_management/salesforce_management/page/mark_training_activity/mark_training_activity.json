@@ -1,0 +1,31 @@
+{
+ "content": null,
+ "creation": "2023-09-11 17:33:33.216772",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-09-11 23:12:28.390330",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "mark-training-activity",
+ "owner": "Administrator",
+ "page_name": "Mark Training Activity",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Supervisor"
+  },
+  {
+   "role": "Team Leader"
+  },
+  {
+   "role": "Area Sales Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

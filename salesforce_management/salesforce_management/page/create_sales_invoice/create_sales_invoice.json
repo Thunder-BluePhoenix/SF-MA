@@ -1,0 +1,18 @@
+{
+ "content": null,
+ "creation": "2023-07-24 12:17:02.877016",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-07-24 12:17:02.877016",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "create-sales-invoice",
+ "owner": "Administrator",
+ "page_name": "Create Sales Invoice",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-04 00:39:26.717029",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "payout",
+  "month",
+  "section_break_j9q0v",
+  "monthly_target_units",
+  "achieved_target_units",
+  "column_break_j7ajp",
+  "monthly_target_value",
+  "achieved_target_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "payout",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Payout"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Month"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "monthly_target_units",
+   "fieldtype": "Int",
+   "label": "Monthly Target (Units)"
+  },
+  {
+   "fieldname": "achieved_target_units",
+   "fieldtype": "Int",
+   "label": "Achieved Target (Units)"
+  },
+  {
+   "fieldname": "column_break_j7ajp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monthly_target_value",
+   "fieldtype": "Int",
+   "label": "Monthly Target (Value)"
+  },
+  {
+   "fieldname": "achieved_target_value",
+   "fieldtype": "Int",
+   "label": "Achieved Target (Value)"
+  },
+  {
+   "fieldname": "section_break_j9q0v",
+   "fieldtype": "Section Break",
+   "label": "Target Details"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 15:02:47.693580",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "SoftSens Employee Incentive",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "employee_name",
+ "track_changes": 1
+}

@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2023-06-29 15:00:56.037010",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-06-29 17:08:48.592116",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "product-remarks",
+ "owner": "Administrator",
+ "page_name": "product-remarks",
+ "roles": [
+  {
+   "role": "Employee"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Product Remarks"
+}

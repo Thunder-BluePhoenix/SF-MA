@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-11 12:41:13.985899",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "employee",
+  "employee_name",
+  "store",
+  "target_qty",
+  "achieved_qty",
+  "attach_image",
+  "image",
+  "check_in_time",
+  "check_out_time",
+  "check_in",
+  "section_break_elozi",
+  "mark_activity",
+  "activity_type",
+  "check_out"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Table MultiSelect",
+   "label": "Activity Type",
+   "options": "Non Promoter Activities Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store",
+   "options": "Store",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mark_activity",
+   "fieldtype": "Button",
+   "label": "Mark Activity"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "depends_on": "eval: !doc.image",
+   "fieldname": "attach_image",
+   "fieldtype": "Button",
+   "label": "Attach Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: (doc.check_in_time && !doc.check_out_time)",
+   "fieldname": "section_break_elozi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Time",
+   "label": "Check In Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_out_time",
+   "fieldtype": "Time",
+   "label": "Check Out Time",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: (!doc.check_in_time && !doc.check_out_time)",
+   "fieldname": "check_in",
+   "fieldtype": "Button",
+   "label": "Check In"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Button",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "target_qty",
+   "fieldtype": "Int",
+   "label": "Target Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "achieved_qty",
+   "fieldtype": "Int",
+   "label": "Achieved Qty",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-09 11:32:25.589067",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "PJP Mark Activities",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

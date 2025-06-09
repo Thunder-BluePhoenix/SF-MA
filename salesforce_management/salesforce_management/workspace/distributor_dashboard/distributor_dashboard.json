@@ -1,0 +1,63 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"taA79MHECy\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Distributor Dashboard</span>\",\"col\":12}},{\"id\":\"HkSMvQse5_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Distributor Delivery Note\",\"col\":4}},{\"id\":\"asrhGg1EK5\",\"type\":\"spacer\",\"data\":{\"col\":7}},{\"id\":\"8XgAiNBEOq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order\",\"col\":3}},{\"id\":\"Dag7SV7E3t\",\"type\":\"spacer\",\"data\":{\"col\":9}},{\"id\":\"9sUBf-4Q0H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}}]",
+ "creation": "2025-02-28 19:31:11.922375",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "clipboard",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Distributor Dashboard",
+ "links": [],
+ "modified": "2025-02-28 19:38:51.821742",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "Distributor Dashboard",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Distributor"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sequence_id": 57.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Distributor Delivery Note",
+   "link_to": "Distributor Delivery Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Purchase Order",
+   "link_to": "Purchase Order",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Purchase Receipt",
+   "link_to": "Purchase Receipt",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Distributor Dashboard"
+}
