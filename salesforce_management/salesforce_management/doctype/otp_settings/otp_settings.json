@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-18 03:09:08.886322",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "otp_expiration_time"
+ ],
+ "fields": [
+  {
+   "description": "After this given minutes the OTP will get expired.",
+   "fieldname": "otp_expiration_time",
+   "fieldtype": "Float",
+   "label": "OTP Expiration Time(Minutes)",
+   "placeholder": "Minutes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-06-18 03:11:09.857546",
+ "modified_by": "Administrator",
+ "module": "Salesforce Management",
+ "name": "OTP Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "read_only": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

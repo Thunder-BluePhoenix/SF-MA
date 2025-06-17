@@ -3,8 +3,8 @@
 
 import frappe
 import json
-import face_recognition
-import numpy as np
+# import face_recognition
+# import numpy as np
 from frappe.model.document import Document
 
 class ROI(Document):
