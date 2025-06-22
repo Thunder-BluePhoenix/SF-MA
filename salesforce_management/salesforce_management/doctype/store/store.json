@@ -132,7 +132,6 @@
    "options": "Zone"
   },
   {
-   "fetch_from": "zone.state",
    "fieldname": "state",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -361,7 +360,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-12-19 12:19:16.704122",
+ "modified": "2025-06-22 11:12:54.315726",
  "modified_by": "Administrator",
  "module": "Salesforce Management",
  "name": "Store",
@@ -390,6 +389,7 @@
    "share": 1
   }
  ],
+ "row_format": "Dynamic",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

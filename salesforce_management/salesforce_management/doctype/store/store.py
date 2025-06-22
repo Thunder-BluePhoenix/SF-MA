@@ -35,17 +35,20 @@ class Store(Document):
 	
 	def on_trash(self):
 		try:
-			if frappe.db.exists("Warehouse", {"warehouse_name": self.name, "parent_warehouse": "Stores - SB"}):
-				frappe.delete_doc("Warehouse", {"warehouse_name": self.name, "parent_warehouse": "Stores - SB"})
+			parent_store_wh = frappe.get_doc("Warehouse", {"custom_parent_store_warehouse":1})
+			if frappe.db.exists("Warehouse", {"warehouse_name": self.name, "parent_warehouse": parent_store_wh.name}):
+				frappe.delete_doc("Warehouse", {"warehouse_name": self.name, "parent_warehouse": parent_store_wh.name})
 		except Exception as e:
 			frappe.msgprint(e)
 
 def _create_warehouse(self):
-	if not frappe.db.exists("Warehouse", {"warehouse_name": self.name, "parent_warehouse": "Stores - SB"}):
+	parent_store_wh = frappe.get_doc("Warehouse", {"custom_parent_store_warehouse":1})
+	comp = frappe.get_doc("Company", {"custom_default":1})
+	if not frappe.db.exists("Warehouse", {"warehouse_name": self.name, "parent_warehouse": parent_store_wh.name}):
 		frappe.get_doc({
 			"doctype": "Warehouse",
 			"warehouse_name": self.name, 
-			"parent_warehouse": "Stores - SB",
-			"company": "SoftSens Baby",
+			"parent_warehouse": parent_store_wh,
+			"company": comp,
 			"store": self.name
 		}).insert(ignore_permissions=True)
