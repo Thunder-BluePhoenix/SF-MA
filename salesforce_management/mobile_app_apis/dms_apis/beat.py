@@ -3,8 +3,10 @@ from frappe import _
 import json
 
 
+
+
 @frappe.whitelist(allow_guest=True)
-def create_store(data):
+def create_beat(data):
     try:
         # Parse request body
         data = frappe.local.form_dict.get("data")
@@ -18,19 +20,16 @@ def create_store(data):
                 frappe.throw(_("Unable to decode JSON from 'data'"))
 
         # Required field validation
-        if not data.get("store_name"):
-            frappe.throw(_("Store Name is required."))
+        if not data.get("beat_number"):
+            frappe.throw(_("Beat Number is required."))
         
         # Define Link fields with their target doctypes
         link_fields = {
-            "store_type": "Store Type",
-            "store_category": "Store Category",
+            
             "zone": "Zone",
             "state": "State",
             "city": "City",
-            "distributor": "Distributor",
-            "item_group": "Item Group",
-            "beat": "Beat"
+            
         }
 
         # Validate link fields
@@ -39,24 +38,24 @@ def create_store(data):
             if value and not frappe.db.exists(doctype, value):
                 frappe.throw(_(f"Invalid value '{value}' for field '{field}'. No such {doctype} exists."))
 
-        # Create the Store document
-        store = frappe.get_doc({
-            "doctype": "Store",
+        # Create the beat document
+        beat = frappe.get_doc({
+            "doctype": "Beat",
             **data
         })
 
-        store.insert(ignore_permissions=True)
+        beat.insert(ignore_permissions=True)
         frappe.db.commit()
 
         return {
             "status": "success",
-            "message": "Store created successfully.",
-            "store_name": store.name
+            "message": "Beat created successfully.",
+            "beat_name": beat.name
         }
 
     except frappe.DuplicateEntryError:
         frappe.local.response["http_status_code"] = 409
-        return {"status": "fail", "message": "Store with the same PAN No already exists."}
+        return {"status": "fail", "message": "Beat with the same Beat Number already exists."}
 
     except frappe.ValidationError as e:
         frappe.local.response["http_status_code"] = 422
@@ -64,9 +63,9 @@ def create_store(data):
 
     except frappe.PermissionError:
         frappe.local.response["http_status_code"] = 403
-        return {"status": "fail", "message": "You do not have permission to create a Store."}
+        return {"status": "fail", "message": "You do not have permission to create a Beat."}
 
     except Exception as e:
-        frappe.log_error(frappe.get_traceback(), "Store API Error")
+        frappe.log_error(frappe.get_traceback(), "beat API Error")
         frappe.local.response["http_status_code"] = 500
-        return {"status": "error", "message": "An unexpected error occurred while creating the Store."}
+        return {"status": "error", "message": "An unexpected error occurred while creating the Beat."}

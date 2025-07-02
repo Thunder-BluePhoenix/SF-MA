@@ -110,4 +110,8 @@ def get_distributor():
 def get_item_group():
     return get_linked_doc_list("Item Group", fields=["name"])
 
+@frappe.whitelist(allow_guest=True)
+def get_beat():
+    return get_linked_doc_list("Beat", fields=["name", "city", "state", "zone"])
+
 

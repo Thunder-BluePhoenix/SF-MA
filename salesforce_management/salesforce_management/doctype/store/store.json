@@ -16,6 +16,7 @@
   "column_break_olpcn",
   "start_time",
   "end_time",
+  "beat",
   "section_break_jhex0",
   "pan_no",
   "gst_no",
@@ -145,11 +146,12 @@
   },
   {
    "fieldname": "city",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "City"
+   "label": "City",
+   "options": "City"
   },
   {
    "fieldname": "pin_code",
@@ -355,12 +357,18 @@
    "label": "Reports to Designation",
    "options": "Designation",
    "read_only": 1
+  },
+  {
+   "fieldname": "beat",
+   "fieldtype": "Link",
+   "label": "Beat",
+   "options": "Beat"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-22 11:12:54.315726",
+ "modified": "2025-07-03 02:57:56.170622",
  "modified_by": "Administrator",
  "module": "Salesforce Management",
  "name": "Store",
@@ -380,13 +388,28 @@
    "write": 1
   },
   {
+   "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Promoter",
-   "share": 1
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
   }
  ],
  "row_format": "Dynamic",
