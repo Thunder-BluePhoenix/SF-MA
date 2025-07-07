@@ -115,3 +115,9 @@ def get_beat():
     return get_linked_doc_list("Beat", fields=["name", "city", "state", "zone"])
 
 
+
+@frappe.whitelist(allow_guest=True)
+def get_stores():
+    return get_linked_doc_list("Store", fields=["name", "store_name", "city", "state"])
+
+
