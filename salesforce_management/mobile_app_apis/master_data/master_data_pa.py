@@ -121,3 +121,8 @@ def get_stores():
     return get_linked_doc_list("Store", fields=["name", "store_name", "city", "state"])
 
 
+
+
+@frappe.whitelist(allow_guest=True)
+def get_pjp_activity_types():
+    return get_linked_doc_list("Non Promoter Activities", fields=["name"])

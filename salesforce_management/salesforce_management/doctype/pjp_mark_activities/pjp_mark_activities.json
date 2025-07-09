@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{employee}-{date}-{###}",
  "creation": "2023-09-11 12:41:13.985899",
  "default_view": "List",
  "doctype": "DocType",
@@ -120,10 +121,11 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-11-09 11:32:25.589067",
+ "modified": "2025-07-09 20:07:39.023843",
  "modified_by": "Administrator",
  "module": "Salesforce Management",
  "name": "PJP Mark Activities",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -135,8 +137,31 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
