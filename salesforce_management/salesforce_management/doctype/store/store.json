@@ -368,7 +368,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-03 02:57:56.170622",
+ "modified": "2025-07-09 20:02:26.563627",
  "modified_by": "Administrator",
  "module": "Salesforce Management",
  "name": "Store",
@@ -408,6 +408,7 @@
    "read": 1,
    "report": 1,
    "role": "All",
+   "select": 1,
    "share": 1,
    "write": 1
   }

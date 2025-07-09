@@ -23,14 +23,12 @@
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date",
-   "read_only": 1
+   "label": "End Date"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date",
-   "read_only": 1
+   "label": "Start Date"
   },
   {
    "fieldname": "min_value",
@@ -40,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-04 13:58:41.541656",
+ "modified": "2025-07-10 00:32:08.382530",
  "modified_by": "Administrator",
  "module": "Salesforce Management",
  "name": "Store Category",
@@ -60,6 +58,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
